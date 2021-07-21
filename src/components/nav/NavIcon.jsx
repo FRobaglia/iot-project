@@ -1,9 +1,9 @@
 const NavIcon = ({ iconId }) =>  {
 
-  let path = '../../assets/svg/' + iconId + '.svg'; 
+  let path = 'sprite-sheet.svg#' + iconId; 
 
   return (
-    <svg className="navItem__icon"><use xlinkHref={ path }/></svg>
+    <svg className={ "navItem__icon navItem__icon--" + iconId }><use xlinkHref={ path }/></svg>
   ); 
 }
 

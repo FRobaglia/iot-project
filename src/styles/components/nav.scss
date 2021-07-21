@@ -12,6 +12,14 @@
     background-color: $secondaryColor;
   }
 
+  .navItem {
+    opacity: .6;
+
+    &.navItem--selected {
+      opacity: 1;
+    }
+  }
+
   .navItem__icon {
     width: 24px;
     height: 24px;
@@ -19,10 +27,5 @@
 
   .navItem__icon {
     fill: $white;
-    opacity: .6;
-
-    &.navItem__icon--selected {
-      opacity: 1;
-    }
   }
 }

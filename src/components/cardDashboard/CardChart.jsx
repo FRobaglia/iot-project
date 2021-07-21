@@ -8,14 +8,19 @@ function clamp(n, min, max){
 
 /***** COMPONENTS *****/
 const CardChart = ({optimalMinValue, optimalMaxValue, currentValue}) =>  {
+  
+  let path = 'sprite-sheet.svg#card-arrow';
 
   const style = {
-    width: clamp(invlerp(optimalMinValue, optimalMaxValue, currentValue) * 100, 0, 100)
+    left: `${clamp(invlerp(optimalMinValue, optimalMaxValue, currentValue) * 100, 0, 100)}%`
   }
 
   return (
-    <div class="cardChart">
+    <div className="cardChart">
       <div className="cardChart__arrow" style={style}>
+        <svg>
+          <use xlinkHref={ path }/>
+        </svg>
       </div>
     </div>
   ); 

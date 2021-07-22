@@ -5,7 +5,7 @@
   background: #F4F4F4;
   box-shadow: -10px -10px 30px #FDFCFC, 10px 10px 80px #BBBBBB;
   border-radius: 15px;
-  margin: 16px;
+  margin-right: 16px;
   display: inline-block;
 }
 
@@ -18,6 +18,7 @@
 .cardHeader {
   font-weight: 700;
   text-align: center;
+  position: relative;
 }
 
 .cardHeader__title {
@@ -28,6 +29,26 @@
 .cardHeader__value {
   font-size: 28px;
   margin-bottom: 42px;
+}
+
+.cardDropdown {
+  position: absolute;
+  top: 26px; left: 50%;
+  transform: translateX(-50%);
+
+  select {
+    width: 115px;
+    height: 25px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 0 4px;
+
+    option {
+      font-weight: 600;
+    }
+  }
 }
 
 .cardChart {

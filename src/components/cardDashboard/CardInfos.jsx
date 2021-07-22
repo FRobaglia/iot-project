@@ -1,19 +1,19 @@
 /***** COMPONENTS *****/
-const CardInfos = ({dayMinValue, dayMaxValue, sign}) =>  {
+const CardInfos = ({dayMinValue, dayMaxValue, moy, sign}) =>  {
 
   return (
     <div class="cardInfos">
       <div className="cardInfos__info">
-        <span class="info">Min</span>
-        <span class="info__bold">{dayMinValue}{sign}</span>
+        <div class="info">Min</div>
+        <div class="info--bold">{dayMinValue}{sign}</div>
       </div>
       <div className="cardInfos__info">
-        <span class="info">Max</span>
-        <span class="info__bold">{dayMaxValue}{sign}</span>
+        <div class="info">Max</div>
+        <div class="info--bold">{dayMaxValue}{sign}</div>
       </div>
       <div className="cardInfos__info">
-        <span class="info">Moy</span>
-        <span class="info__bold">{(dayMinValue + dayMaxValue) / 2}{sign}</span>
+        <div class="info">Moy</div>
+        <div class="info info--bold">{moy}{sign}</div>
       </div>
     </div>
   ); 

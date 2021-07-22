@@ -1,7 +1,7 @@
 const Graphs = () =>  {
 
   return (
-    <main>Graphs</main>
+    <main className="main main--graphs">Graphs</main>
   ); 
 }
 

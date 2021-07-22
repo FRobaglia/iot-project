@@ -1,4 +1,5 @@
 .nav {
+  z-index: 2;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -31,58 +32,58 @@
   .navItem__icon {
     fill: $white;
   }
+}
 
-  &.nav--desktop {
-    width: 258px;
-    height: 100vh;
-    padding: 4rem 0 2rem;
-    display: flex;
+.App--desktop .nav {
+  width: $navWidthDesktop;
+  height: 100vh;
+  padding: 4rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $grey;
+  box-shadow: $menuShadow;
+
+  .navLogo {
+    width: 100px;
+    height: 100px;
+    fill: $primaryColor
+  }
+
+  .navList {
+    width: fit-content;
+    height: 256px;
+    margin-top: 4rem;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .navItem__link {
+    display: flex;
     align-items: center;
-    background: $grey;
-    box-shadow: $menuShadow;
+  }
 
-    .navLogo {
-      width: 100px;
-      height: 100px;
-      fill: $primaryColor
-    }
+  .navItem__icon {
+    fill: $secondaryColor;
+  }
 
-    .navList {
-      width: fit-content;
-      height: 256px;
-      margin-top: 4rem;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+  .navItem__title {
+    margin-left: 1rem;
+  }
 
-    .navItem__link {
-      display: flex;
-      align-items: center;
-    }
+  .navLogOut {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+  }
 
-    .navItem__icon {
-      fill: $secondaryColor;
-    }
+  .navLogOut__icon {
+    width: 20px;
+    height: 20px;
+  }
 
-    .navItem__title {
-      margin-left: 1rem;
-    }
-
-    .navLogOut {
-      margin-top: auto;
-      display: flex;
-      align-items: center;
-    }
-
-    .navLogOut__icon {
-      width: 20px;
-      height: 20px;
-    }
-
-    .navLogOut__text {
-      margin-left: .5rem;
-    }
+  .navLogOut__text {
+    margin-left: .5rem;
   }
 }

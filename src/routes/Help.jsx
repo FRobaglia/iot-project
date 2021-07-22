@@ -1,7 +1,7 @@
 const Help = () =>  {
 
   return (
-    <main>Help HZHHEHEHE</main>
+    <main className="main main--help">Help HZHHEHEHE</main>
   ); 
 }
 

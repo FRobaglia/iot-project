@@ -1,7 +1,7 @@
 const Login = () =>  {
 
   return (
-    <main>Login</main>
+    <main className="main main--login">Login</main>
   ); 
 }
 

@@ -1,0 +1,10 @@
+body {
+  font-family: "Poppins";
+}
+
+.App--desktop .main {
+  width: $mainWidthDesktop;
+  height: 100vh;
+  margin-left: auto;
+  padding: 2rem;
+}

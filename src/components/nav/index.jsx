@@ -14,7 +14,7 @@ const Nav = () =>  {
   }
 
   return (
-    <nav className={'nav ' + (isBrowser ? 'nav--desktop' : '')}>
+    <nav className="nav">
       { isBrowser ? <Icon iconId='logoName' iconClass='navLogo'></Icon> : '' }
       <ul className="navList">
         <NavItem onChange={handleChange} selected={selected} link='' title='Home' iconId='home'></NavItem>

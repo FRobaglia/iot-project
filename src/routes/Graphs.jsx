@@ -1,7 +1,12 @@
+import SwiperTest from '../components/SwiperTest';
+import '../components/SwiperTest'; 
+
 const Graphs = () =>  {
 
   return (
-    <main className="main main--graphs">Graphs</main>
+    <main className="main main--graphs">Graphs
+        <SwiperTest></SwiperTest>
+    </main>
   ); 
 }
 

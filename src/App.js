@@ -10,6 +10,7 @@ import Settings from './routes/Settings';
 import Help from './routes/Help';
 import Login from './routes/Login';
 import Nav from './components/nav/index';
+import Swiper from 'swiper';
 
 function App() {
   return (

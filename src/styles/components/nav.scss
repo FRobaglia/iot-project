@@ -70,6 +70,8 @@
 
   .navItem__title {
     margin-left: 1rem;
+    font-size: .875rem;
+    font-weight: 600;
   }
 
   .navLogOut {
@@ -85,5 +87,9 @@
 
   .navLogOut__text {
     margin-left: .5rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-position: under;
   }
 }

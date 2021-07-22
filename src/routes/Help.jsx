@@ -1,7 +1,7 @@
 const Help = () =>  {
 
   return (
-    <div>Help</div>
+    <main>Help HZHHEHEHE</main>
   ); 
 }
 

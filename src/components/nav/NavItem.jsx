@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { isBrowser } from 'react-device-detect';
 
 /***** COMPONENTS *****/
-import NavIcon from './NavIcon';
+import Icon from '../Icon';
 import NavTitle from './NavTitle';
  
 const NavItem = ({ link, title, iconId, selected, onChange }) =>  {
@@ -16,7 +16,7 @@ const NavItem = ({ link, title, iconId, selected, onChange }) =>  {
   return (
     <li className={ "navItem" + selectedClass } onClick={() => { handleChange(title) }}>
       <Link to={ link } className="navItem__link">
-        <NavIcon iconId={ iconId }></NavIcon>
+        <Icon iconId={ iconId } iconClass='navItem__icon'></Icon>
         { isBrowser ? <NavTitle title={ title } ></NavTitle> : "" }
       </Link>
     </li>

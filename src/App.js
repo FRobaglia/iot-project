@@ -6,6 +6,7 @@ import Home from './routes/Home';
 import Graphs from './routes/Graphs';
 import Settings from './routes/Settings';
 import Help from './routes/Help';
+import Login from './routes/Login';
 import Nav from './components/nav/index';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/graphs" component={ Graphs }/>
           <Route exact path="/settings" component={ Settings }/>
           <Route exact path="/help " component={ Help }/>
+          <Route exact path="/login " component={ Login }/>
         </Switch>
         <Nav></Nav>
       </Router>

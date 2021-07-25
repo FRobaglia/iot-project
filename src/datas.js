@@ -8,7 +8,18 @@ export const datas = [
     dayMaxValue: 23,
     sign: "°C",
     dropdown: false,
-    off: false
+    off: false, 
+    article: {
+      title: {
+        firstContent: "Contrôle de", 
+        secondContent: "l’hygrométrie"
+      }, 
+      content: [
+        "Fermer totalement les tunnels pendant la nuit et assurer <strong>une bonne étanchéité</strong> des abris-serre.", 
+        "<strong>Ouvrir</strong> tôt le matin afin d’éliminer l’excès d’humidité.", 
+        "<strong>Fermer un peu plus tôt</strong> l’après midi pour emmagasiner la chaleur et ce afin de garder une température proche de l’optimum pendant la nuit."
+      ]
+    }
   },
   {
     title: "Humidité du sol",
@@ -19,7 +30,18 @@ export const datas = [
     dayMaxValue: 30,
     sign: "%",
     dropdown: false,
-    off: true
+    off: true,
+    article: {
+      title: {
+        firstContent: "Contrôle de", 
+        secondContent: "l’hygrométrie"
+      }, 
+      content: [
+        "Fermer totalement les tunnels pendant la nuit et assurer <strong>une bonne étanchéité</strong> des abris-serre.", 
+        "<strong>Ouvrir</strong> tôt le matin afin d’éliminer l’excès d’humidité.", 
+        "<strong>Fermer un peu plus tôt</strong> l’après midi pour emmagasiner la chaleur et ce afin de garder une température proche de l’optimum pendant la nuit."
+      ]
+    }
   },
   {
     title: "Luminosité",
@@ -30,7 +52,18 @@ export const datas = [
     dayMaxValue: 30,
     sign: "lx",
     dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
-    off: false
+    off: false, 
+    article: {
+      title: {
+        firstContent: "Contrôle de", 
+        secondContent: "l’hygrométrie"
+      }, 
+      content: [
+        "Fermer totalement les tunnels pendant la nuit et assurer <strong>une bonne étanchéité</strong> des abris-serre.", 
+        "<strong>Ouvrir</strong> tôt le matin afin d’éliminer l’excès d’humidité.", 
+        "<strong>Fermer un peu plus tôt</strong> l’après midi pour emmagasiner la chaleur et ce afin de garder une température proche de l’optimum pendant la nuit."
+      ]
+    }
   },
 ]
 

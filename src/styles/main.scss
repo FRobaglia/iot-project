@@ -1,5 +1,10 @@
 body {
   font-family: "Poppins";
+  color: $mainTextColor;
+}
+
+.main {
+  height: $mainHeightMobile; 
 }
 
 .App--desktop .main {

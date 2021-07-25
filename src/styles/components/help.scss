@@ -1,0 +1,31 @@
+.helpSection__title {
+  margin-bottom: 3.75rem;
+  font-size: 2.125rem;
+  font-weight: 600;
+
+  .colored {
+    color: $primaryColor;
+  }
+}
+
+.helpSection__content {
+  font-size: 1rem;
+
+  p {
+
+    &:before {
+      content: "•";
+      display: inline-block;
+      margin-right: .5rem;
+    }
+    
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+}

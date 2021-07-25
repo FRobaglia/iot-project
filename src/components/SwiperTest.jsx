@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.scss';
 
 const SwiperTest = () =>  {
   return (

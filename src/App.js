@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { isBrowser } from 'react-device-detect';
 
-import './styles/styles.scss';
-
 /***** COMPONENTS *****/
 import Home from './routes/Home';
 import Graphs from './routes/Graphs';
@@ -11,6 +9,12 @@ import Help from './routes/Help';
 import Login from './routes/Login';
 import Header from './components/Header';
 import Nav from './components/nav/index';
+
+/***** SWIPER *****/
+import 'swiper/swiper.scss';
+import "swiper/components/pagination/pagination.scss"
+
+import './styles/styles.scss';
 
 function App() {
   return (

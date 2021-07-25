@@ -1,5 +1,5 @@
 body {
-  margin-bottom: $navHeightMobile;
+  margin-bottom: $navHeightMobile + 32px;
   font-family: "Poppins";
   color: $mainTextColor;
 }
@@ -30,8 +30,4 @@ body {
 h1 {
   font-weight: 700;
   font-size: 34px;
-}
-
-.swiper-container {
-  padding: 26px !important;
 }

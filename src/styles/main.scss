@@ -1,14 +1,14 @@
 body {
   font-family: "Poppins";
-  min-height: 100vh;
+  min-height: calc(100vh + 92px);
 }
 
 @media (min-width: 1024px) {
   .main {
-  width: $mainWidthDesktop;
-  height: 100vh;
-  margin-left: auto;
-  padding: 2rem;
+    width: $mainWidthDesktop;
+    height: 100vh;
+    margin-left: auto;
+    padding: 2rem;
   }
 }
 

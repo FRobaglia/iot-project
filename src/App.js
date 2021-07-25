@@ -11,7 +11,6 @@ import Help from './routes/Help';
 import Login from './routes/Login';
 import Header from './components/Header';
 import Nav from './components/nav/index';
-import Swiper from 'swiper';
 
 function App() {
   return (

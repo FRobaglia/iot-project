@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins";
+  min-height: 100vh;
 }
 
 @media (min-width: 1024px) {
@@ -13,7 +14,7 @@ body {
 
 .main__title {
   margin: 26px; 
-  margin-bottom: 48px;
+  margin-bottom: 0;
   span {
     font-weight: 400;
     font-size: 12px;
@@ -27,4 +28,9 @@ body {
 h1 {
   font-weight: 700;
   font-size: 34px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
 }

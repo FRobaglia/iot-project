@@ -2,11 +2,13 @@ body {
   font-family: "Poppins";
 }
 
-.App--desktop .main {
+@media (min-width: 1024px) {
+  .main {
   width: $mainWidthDesktop;
   height: 100vh;
   margin-left: auto;
   padding: 2rem;
+  }
 }
 
 .main__title {

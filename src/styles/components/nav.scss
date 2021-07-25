@@ -24,6 +24,14 @@
     }
   }
 
+  .navLogo {
+    display: none;
+  }
+
+  .navItem__title {
+    display: none;
+  }
+
   .navItem__icon {
     width: 24px;
     height: 24px;
@@ -34,62 +42,69 @@
   }
 }
 
-.App--desktop .nav {
-  width: $navWidthDesktop;
-  height: 100vh;
-  padding: 4rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $grey;
-  box-shadow: $menuShadow;
-
-  .navLogo {
-    width: 100px;
-    height: 100px;
-    fill: $primaryColor
-  }
-
-  .navList {
-    width: fit-content;
-    height: 256px;
-    margin-top: 4rem;
+@media (min-width: 1024px) {
+  .nav {
+    width: $navWidthDesktop;
+    height: 100vh;
+    padding: 4rem 0 2rem;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .navItem__link {
-    display: flex;
     align-items: center;
+    background: $grey;
+    box-shadow: $menuShadow;
+
+    .navLogo {
+      width: 100px;
+      height: 100px;
+      fill: $primaryColor
+    }
+
+    .navList {
+      width: fit-content;
+      height: 256px;
+      margin-top: 4rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .navItem__link {
+      display: flex;
+      align-items: center;
+    }
+
+    .navItem__icon {
+      fill: $secondaryColor;
+    }
+
+    .navItem__title {
+      display: block;
+      margin-left: 1rem;
+      font-size: .875rem;
+      font-weight: 600;
+    }
+
+    .navLogOut {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .navLogOut__icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .navLogOut__text {
+      margin-left: .5rem;
+      font-size: .75rem;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
   }
 
-  .navItem__icon {
-    fill: $secondaryColor;
-  }
-
-  .navItem__title {
-    margin-left: 1rem;
-    font-size: .875rem;
-    font-weight: 600;
-  }
-
-  .navLogOut {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-  }
-
-  .navLogOut__icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .navLogOut__text {
-    margin-left: .5rem;
-    font-size: .75rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-position: under;
+  .navLogo, .navLogout {
+    display: none;
   }
 }

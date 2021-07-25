@@ -6,7 +6,7 @@ const CardDropdown = ({dropdown}) =>  {
     <div className="cardDropdown">
       <select name="CardDropdown" id="CardDropdown">
       {dropdown.map((value) => {      
-        return (<option>{value}</option>)})}
+        return (<option key={value}>{value}</option>)})}
       </select>
     </div>
   ); 

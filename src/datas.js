@@ -1,5 +1,6 @@
 export const datas = [
   {
+    id: 1,
     title: "Température de l'air",
     currentValue: 21,  
     optimalMinValue: 15, 
@@ -22,6 +23,7 @@ export const datas = [
     }
   },
   {
+    id: 2,
     title: "Humidité du sol",
     currentValue: 38,  
     optimalMinValue: 20, 
@@ -44,6 +46,7 @@ export const datas = [
     }
   },
   {
+    id: 3,
     title: "Luminosité",
     currentValue: 38,  
     optimalMinValue: 20, 

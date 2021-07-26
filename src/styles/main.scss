@@ -3,6 +3,10 @@ body {
   font-family: $primaryFont; 
   color: $mainTextColor;
   background: $bodyBg;
+
+  @include desktop {
+    padding-bottom: unset;
+  }
 }
 
 .main {

@@ -1,0 +1,31 @@
+.settingsCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.settingsCard__title {
+  color: $primaryColor;
+  font-weight: 700;
+}
+
+.settingsCard__cta {
+  position: absolute;
+  top: 1rem;
+  right: 1.625rem;
+  width: 24px;
+  height: 24px;
+}
+
+.settingsCard__iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingsCard__icon {
+  width: 136px;
+  height: 136px;
+}

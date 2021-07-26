@@ -2,7 +2,6 @@
 .settingsCard__toggleState {
   position: relative;
   width: 100%;
-  padding: 1rem;
   display: inline-block;
 
   .toggleState__text {
@@ -57,5 +56,9 @@
       transform: translateX(26px);
     }
   }
+}
+
+#ground-humidity {
+  fill: red;
 }
 

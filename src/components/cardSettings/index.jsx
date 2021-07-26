@@ -5,10 +5,12 @@ import ToggleButton from './ToggleButton';
 const CardSettings = ({ title, idName }) =>  {
 
   return (
-    <section className="settingsCard">
+    <section className="card settingsCard">
       <h2 className="settingsCard__title">{ title }</h2>
-      <Icon iconId='settingsCta' iconClass='settingsCta' />
-      <Icon iconId={ idName } iconClass={ idName } />
+      <Icon iconId='settingsCta' iconClass='settingsCard__cta' />
+      <div className="settingsCard__iconContainer">
+        <img src={ './svg/'  + idName + '.svg' } alt={ idName } iconClass="settingsCard__icon" />
+      </div>
       <ToggleButton />
     </section>
   ); 

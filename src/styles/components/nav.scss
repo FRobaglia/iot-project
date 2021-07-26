@@ -40,10 +40,8 @@
   .navItem__icon {
     fill: $white;
   }
-}
 
-@media (min-width: 1024px) {
-  .nav {
+  @include desktop {
     width: $navWidthDesktop;
     height: 100vh;
     padding: 4rem 0 2rem;
@@ -52,13 +50,13 @@
     align-items: center;
     background: $grey;
     box-shadow: $menuShadow;
-
+  
     .navLogo {
       width: 100px;
       height: 100px;
       fill: $primaryColor
     }
-
+  
     .navList {
       width: fit-content;
       height: 256px;
@@ -67,34 +65,34 @@
       justify-content: space-between;
       align-items: flex-start;
     }
-
+  
     .navItem__link {
       display: flex;
       align-items: center;
     }
-
+  
     .navItem__icon {
       fill: $secondaryColor;
     }
-
+  
     .navItem__title {
       display: block;
       margin-left: 1rem;
       font-size: .875rem;
       font-weight: 600;
     }
-
+  
     .navLogOut {
       margin-top: auto;
       display: flex;
       align-items: center;
     }
-
+  
     .navLogOut__icon {
       width: 20px;
       height: 20px;
     }
-
+  
     .navLogOut__text {
       margin-left: .5rem;
       font-size: .75rem;
@@ -102,9 +100,9 @@
       text-decoration: underline;
       text-underline-position: under;
     }
-  }
-
-  .navLogo, .navLogout {
-    display: none;
+  
+    .navLogo, .navLogout {
+      display: none;
+    }
   }
 }

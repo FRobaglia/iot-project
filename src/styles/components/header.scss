@@ -7,14 +7,12 @@
   a {
     display: inline-block;
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__logo {
   width: 39px; height: 34px;
-}
-
-@media (min-width: 1024px) {
-  .header {
-    display: none;
-  }
 }

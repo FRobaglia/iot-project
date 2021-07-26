@@ -4,8 +4,8 @@ body {
   color: $mainTextColor;
 }
 
-@media (min-width: 1024px) {
-  .main {
+.main {
+  @include desktop {
     width: $mainWidthDesktop;
     height: 100vh;
     margin-left: auto;

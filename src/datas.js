@@ -1,6 +1,7 @@
 export const datas = [
   {
     id: 1,
+    idName: "temperature",
     title: "Température de l'air",
     currentValue: 21,  
     optimalMinValue: 15, 
@@ -24,6 +25,7 @@ export const datas = [
   },
   {
     id: 2,
+    idName: "ground-humidity",
     title: "Humidité du sol",
     currentValue: 38,  
     optimalMinValue: 20, 
@@ -47,6 +49,7 @@ export const datas = [
   },
   {
     id: 3,
+    idName: "brightness",
     title: "Luminosité",
     currentValue: 38,  
     optimalMinValue: 20, 
@@ -70,7 +73,8 @@ export const datas = [
   },
   {
     id: 4,
-    title: "Luminosité",
+    idName: "humidity",
+    title: "Humidité",
     currentValue: 38,  
     optimalMinValue: 20, 
     optimalMaxValue: 45, 
@@ -82,7 +86,7 @@ export const datas = [
     article: {
       title: {
         firstContent: "Contrôle de", 
-        secondContent: "l’humidité de l’air "
+        secondContent: "l’humidité du sol"
       }, 
       content: [
         "Fermer totalement les tunnels pendant la nuit et assurer <strong>une bonne étanchéité</strong> des abris-serre.", 

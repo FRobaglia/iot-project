@@ -15,7 +15,6 @@ const Help = () =>  {
   return (
     <main className="main main--help">
       <MainTitle pageId='help' title='Aide' />
-
       <Swiper 
       pagination={ true } 
       breakpoints= {

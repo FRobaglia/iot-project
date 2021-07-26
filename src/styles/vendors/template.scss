@@ -4,3 +4,7 @@ $mainWidthDesktop: calc(100vw - #{$navWidthDesktop});
 $navHeightMobile: 72px; 
 
 $primaryFont: "Poppins"; 
+
+$bulletPaginationHeight: 48px; 
+
+$mainPaddingBottomMobile: calc(#{$navHeightMobile} + #{$bulletPaginationHeight} + 2rem)

@@ -8,7 +8,7 @@ const Header = () =>  {
   return (
     <header className="header">
       <Router>
-        <Link to="home">
+        <Link to="">
           <Icon iconId="logo" iconClass="header__logo" />
         </Link>
       </Router>

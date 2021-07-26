@@ -1,7 +1,7 @@
 const Settings = () =>  {
 
   return (
-    <main className="main main--settings">Settings</main>
+    <main className="main main--settings">Système</main>
   ); 
 }
 

@@ -1,13 +1,19 @@
+import React, { useState } from "react";
+
 const ToggleButton = () =>  {
+
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
+
   return (
-    <label className="settingsCard__toggleState">
-      <input type="checkbox" className="toggleState__input"/>
-      <span className="toggleState__sliderContainer">
-        <p className="toggleState__text toggleState__text--yes">Oui</p>
-        <span className="toggleState__slider"></span>
-        <p className="toggleState__text toggleState__text--no">Non</p>
-      </span>
-    </label>
+    <div className={ !isActive ? "toggleState toggleState--isActive" : "toggleState" } onClick={handleToggle}>
+      <p className="toggleState__text toggleState__text--off">Off</p>
+      <span className="toggleState__slider"></span>
+      <p className="toggleState__text toggleState__text--on">On</p>
+    </div>
   ); 
 }
 

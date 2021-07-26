@@ -9,7 +9,7 @@ const CardSettings = ({ title, idName }) =>  {
       <h2 className="settingsCard__title">{ title }</h2>
       <Icon iconId='settingsCta' iconClass='settingsCard__cta' />
       <div className="settingsCard__iconContainer">
-        <img src={ './svg/'  + idName + '.svg' } alt={ idName } iconClass="settingsCard__icon" />
+        <img src={ './svg/'  + idName + '.svg' } alt={ idName } className="settingsCard__icon" />
       </div>
       <ToggleButton />
     </section>

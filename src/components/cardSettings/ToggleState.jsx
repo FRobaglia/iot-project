@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ToggleButton = () =>  {
+const ToggleState = () =>  {
 
   const [isActive, setActive] = useState("false");
 
@@ -17,4 +17,4 @@ const ToggleButton = () =>  {
   ); 
 }
 
-export default ToggleButton;
+export default ToggleState;

@@ -1,6 +1,6 @@
 /***** COMPONENTS *****/
 import Icon from '../Icon';
-import ToggleButton from './ToggleButton';
+import ToggleState from './ToggleState';
 
 const CardSettings = ({ title, idName }) =>  {
 
@@ -11,7 +11,7 @@ const CardSettings = ({ title, idName }) =>  {
       <div className="settingsCard__iconContainer">
         <img src={ './svg/'  + idName + '.svg' } alt={ idName } className="settingsCard__icon" />
       </div>
-      <ToggleButton />
+      <ToggleState />
     </section>
   ); 
 }

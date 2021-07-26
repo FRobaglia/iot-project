@@ -2,6 +2,7 @@ import datas from '../datas';
 
 /***** COMPONENTS *****/
 import HelpSection from '../components/helpSection/index';
+import MainTitle from '../components/MainTitle';
 
 /***** SWIPER *****/
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,7 +14,19 @@ const Help = () =>  {
 
   return (
     <main className="main main--help">
-      <Swiper pagination={ true } >
+      <MainTitle pageId='help' title='Aide' />
+
+      <Swiper 
+      pagination={ true } 
+      breakpoints= {
+        {
+          900: {
+            direction: 'vertical',
+            enabled: false
+          }
+        }
+      }
+      >
       { datas.map(( data ) => {       
         return (
           <SwiperSlide key={ data.article.title } >

@@ -7,27 +7,20 @@ import 'swiper/swiper.scss';
 
 /***** COMPONENTS *****/
 import Card from '../components/cardDashboard/index';
+import MainTitle from '../components/MainTitle'; 
+
 SwiperCore.use([Pagination]);
 
 const Home = () =>  {
 
   return (
     <main className="main main--home">
-      <div className="main__title">
-        <h1>Tableau de bord</h1>
-        <span><strong>Dernière actualisation :</strong> 19 Juillet 2021 - 14:45</span>
-      </div>
+      <MainTitle pageId='home' title='Tableau de bord' subtitle='<strong>Dernière actualisation :</strong> 19 Juillet 2021 - 14:45' />
       <Swiper
       spaceBetween={20}
-      slidesPerView={1}
       pagination={true}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-      type="bullets"
       breakpoints= {
         {
-
-          // when window width is >= 320px
           400: {
             slidesPerView: 1.2,
           },

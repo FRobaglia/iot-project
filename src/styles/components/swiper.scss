@@ -20,3 +20,9 @@
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 .5rem;
 }
+
+.swiper-slide {
+  @include desktop {
+    height: unset !important;
+  }
+}

@@ -22,7 +22,7 @@ const CardSettings = ({ card }) =>  {
             <Icon iconId='settingsCta' />
           </div>
           <div className="settingsCard__iconContainer">
-            <img src={ './svg/'  + card.id + '.svg' } alt={ card.id } className="settingsCard__icon" />
+            <img src={ './svg/'  + card.iconName + '.svg' } alt={ card.iconName } className="settingsCard__icon" />
           </div>
           <ToggleState card={card} />
         </section>

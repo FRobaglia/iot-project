@@ -21,23 +21,17 @@
   margin: 0 .5rem;
 }
 
-.swiper-wrapper {
-  padding: 4rem 0 4rem 1.625rem;
-
-  @include desktop {
-    padding-left: 0;
-  }
-}
-
-
 .main--home, 
 .main--settings {
 
   .swiper-wrapper {
-  
+    padding: 4rem 0 4rem 1.625rem;;
+    padding-left: 1.625rem;
+
     @include desktop {
       width: calc(100% - 4rem);
       margin: 0 auto;
+      padding-left: 0;
       flex-wrap: wrap;
       justify-content: flex-start;
       column-gap: .6rem;
@@ -53,8 +47,16 @@
   }
 }
 
-.main--help .swiper-slide {
+.main--help {
+  
   @include desktop {
-    height: fit-content !important;
+
+    .swiper-wrapper {
+      padding: 4rem 0;
+    }
+
+    .swiper-slide {
+      height: fit-content !important;
+    }
   }
 }

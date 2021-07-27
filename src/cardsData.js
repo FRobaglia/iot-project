@@ -21,7 +21,7 @@ const cardsStaticData = [
     optimalMinValue: getStorage('temperature').min, 
     optimalMaxValue: getStorage('temperature').max,
     dropdown: false,
-    off: false, 
+    off: getStorage('temperature').off, 
     sign: "°C",
     article: {
       title: {
@@ -42,7 +42,7 @@ const cardsStaticData = [
     optimalMinValue: getStorage('humidity/air').min, 
     optimalMaxValue: getStorage('humidity/air').max, 
     dropdown: false,
-    off: true,
+    off: getStorage('humidity/menthe').off,
     sign: "%",
     article: {
       title: {
@@ -64,7 +64,7 @@ const cardsStaticData = [
     optimalMaxValue: getStorage('luminosity').max,
     sign: "lux",
     dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
-    off: false, 
+    off: getStorage('luminosity').off, 
     article: {
       title: {
         firstContent: "Contrôle de", 
@@ -85,7 +85,7 @@ const cardsStaticData = [
     optimalMaxValue: getStorage('humidity/menthe').max,
     sign: "%",
     dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
-    off: false, 
+    off: getStorage('humidity/air').off, 
     article: {
       title: {
         firstContent: "Contrôle de", 

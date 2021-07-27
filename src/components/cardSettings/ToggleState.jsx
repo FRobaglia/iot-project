@@ -3,11 +3,11 @@ import { getStorage, setStorage, flash } from "../../utils";
 
 const ToggleState = ({card}) =>  {
 
-  const [isActive, setActive] = useState(!getStorage(card.id).off);
+  const [isActive, setActive] = useState(getStorage(card.id).off);
 
   const handleToggle = () => {
     setActive(!isActive);
-    setStorage(card.id, {...getStorage(card.id), off: isActive})
+    setStorage(card.id, {...getStorage(card.id), off: !isActive})
     flash(`La carte <strong>${card.title}</strong> est maintenant ${isActive ? "active" : "inactive"}.`)
     
   };

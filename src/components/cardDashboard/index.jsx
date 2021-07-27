@@ -8,7 +8,7 @@ const CardDashboard = ({title, currentValue, dayMinValue, dayMaxValue, optimalMi
   const cardClass = off ? " card--off" : ""
   const showAlert = currentValue < optimalMinValue || currentValue > optimalMaxValue
 
-  console.log(showAlert)
+  console.log(showAlert)  
   return (
     <article className={"card" + cardClass}>
         <CardHeader title={title} currentValue={!off ? currentValue : "--"} sign={sign} dropdown={dropdown}></CardHeader>

@@ -53,7 +53,6 @@ const Home = () =>  {
               })
             })
             arr = [...arr, res]
-            console.log(res)
             setCards(arr)
         }
 

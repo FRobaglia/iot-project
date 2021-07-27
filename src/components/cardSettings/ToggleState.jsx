@@ -9,7 +9,7 @@ const ToggleState = () =>  {
   };
 
   return (
-    <div className={ !isActive ? "toggleState toggleState--isActive" : "toggleState" } onClick={handleToggle}>
+    <div className={ !isActive ? "toggleState toggleState--isActive" : "toggleState" } onClick={ handleToggle }>
       <p className="toggleState__text toggleState__text--off">Off</p>
       <span className="toggleState__slider"></span>
       <p className="toggleState__text toggleState__text--on">On</p>

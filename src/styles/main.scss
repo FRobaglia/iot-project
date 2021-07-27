@@ -46,3 +46,7 @@ body {
     }
   }
 }
+
+form, label, button {
+  font-family: $primaryFont;
+}

@@ -52,17 +52,22 @@ form, label, button {
 }
 
 .flash {
-  position: absolute;
+  opacity: 0;
   z-index: 100;
-  padding: 30px;
-  color: white;
-  border-radius: 6px;
+  position: fixed; 
   top: -100%;
   left: 50%;
   transform: translateX(-50%);
+  width: 80%;
+  padding: 30px;
+  color: $white;
   background: $primaryColor;
+  border-radius: $mainRadius;
   transition: .3s ease;
-  opacity: 0;
+
+  @include desktop {
+    width: 50vw;
+  }
 
   strong {
     font-weight: 700;

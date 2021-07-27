@@ -16,6 +16,7 @@ const Settings = () =>  {
     <main className="main main--settings">
       <MainTitle pageId='settings' title='Système' />
       <Swiper 
+      slidesPerView={ 1.2 }
       pagination={ true } 
       breakpoints= {
         {

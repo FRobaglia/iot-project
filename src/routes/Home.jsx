@@ -17,8 +17,8 @@ const Home = () =>  {
     <main className="main main--home">
       <MainTitle pageId='home' title='Tableau de bord' subtitle='<strong>Dernière actualisation :</strong> 19 Juillet 2021 - 14:45' />
       <Swiper
-      spaceBetween={20}
-      pagination={true}
+      slidesPerView={ 1.2 }
+      pagination={ true } 
       breakpoints= {
         {
           400: {

@@ -29,7 +29,7 @@ const Help = () =>  {
       { datas.map(( data ) => {       
         return (
           <SwiperSlide key={ data.article.title } >
-            <HelpSection key={ data.article.title } title={ data.article.title } content={ data.article.content }/>
+            <HelpSection title={ data.article.title } content={ data.article.content }/>
           </SwiperSlide>
         ) 
       }) }

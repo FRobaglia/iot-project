@@ -14,11 +14,13 @@ const CardSettings = ({ title, idName }) =>  {
   };
 
   return (
-    <div className={ !isActive ? "f1_container f1_container--isActive" : "f1_container" } onClick={ handleToggle }>
+    <div className={ !isActive ? "f1_container f1_container--isActive" : "f1_container" }>
       <div className="f1_card">
         <section className="card settingsCard front">
           <h2 className="settingsCard__title">{ title }</h2>
-          <Icon iconId='settingsCta' iconClass='settingsCard__cta' />
+          <div className="settingsCard__cta" onClick={ handleToggle }>
+            <Icon iconId='settingsCta' />
+          </div>
           <div className="settingsCard__iconContainer">
             <img src={ './svg/'  + idName + '.svg' } alt={ idName } className="settingsCard__icon" />
           </div>
@@ -27,7 +29,9 @@ const CardSettings = ({ title, idName }) =>  {
 
         <section className="card settingsCard back">
           <h2 className="settingsCard__title">{ title }</h2>
-          <Icon iconId='settingsCta' iconClass='settingsCard__cta' />
+          <div className="settingsCard__cta" onClick={ handleToggle }>
+            <Icon iconId='settingsCta' />
+          </div>
           <FormValues />
         </section>
       </div>

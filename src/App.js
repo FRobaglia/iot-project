@@ -24,9 +24,9 @@ function App() {
         <Nav></Nav>
         <Switch>
           <Route exact path="/" component={ Home }/>
-          <Route exact path="/statistiques" component={ Graphs }/>
-          <Route exact path="/systeme" component={ Settings }/>
-          <Route exact path="/aide" component={ Help }/>
+          <Route exact path="/graphs" component={ Graphs }/>
+          <Route exact path="/settings" component={ Settings }/>
+          <Route exact path="/help" component={ Help }/>
           <Route exact path="/login " component={ Login }/>
         </Switch>
       </Router>

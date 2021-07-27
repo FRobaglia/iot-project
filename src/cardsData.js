@@ -1,13 +1,23 @@
-export const datas = [
+export const apiURL = "http://ec2-3-133-134-22.us-east-2.compute.amazonaws.com:3000/"
+
+export function getMinMaxValues(card) {
+  const sorted = [...card].sort(function (a, b) {
+    return a.value - b.value
+  })
+
+  return {
+    min: sorted[0].value,
+    max: sorted[sorted.length - 1].value
+  }
+}
+
+const cardsStaticData = [
   {
     id: 1,
+    endpoint: 'temperature',
     title: "Température de l'air",
-    currentValue: 21,  
     optimalMinValue: 15, 
-    optimalMaxValue: 27, 
-    dayMinValue: 17, 
-    dayMaxValue: 23,
-    sign: "°C",
+    optimalMaxValue: 27,
     dropdown: false,
     off: false, 
     article: {
@@ -25,12 +35,9 @@ export const datas = [
   {
     id: 2,
     title: "Humidité du sol",
-    currentValue: 38,  
+    endpoint: 'temperature',
     optimalMinValue: 20, 
     optimalMaxValue: 45, 
-    dayMinValue: 18, 
-    dayMaxValue: 30,
-    sign: "%",
     dropdown: false,
     off: true,
     article: {
@@ -48,11 +55,9 @@ export const datas = [
   {
     id: 3,
     title: "Luminosité",
-    currentValue: 38,  
+    endpoint: 'temperature',
     optimalMinValue: 20, 
-    optimalMaxValue: 45, 
-    dayMinValue: 18, 
-    dayMaxValue: 30,
+    optimalMaxValue: 45,
     sign: "lx",
     dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
     off: false, 
@@ -70,13 +75,10 @@ export const datas = [
   },
   {
     id: 4,
-    title: "Luminosité",
-    currentValue: 38,  
+    title: "Humidité de l'air",
+    endpoint: "temperature",
     optimalMinValue: 20, 
-    optimalMaxValue: 45, 
-    dayMinValue: 18, 
-    dayMaxValue: 30,
-    sign: "lx",
+    optimalMaxValue: 45,
     dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
     off: false, 
     article: {
@@ -93,4 +95,4 @@ export const datas = [
   },
 ]
 
-export default datas;
+export default cardsStaticData

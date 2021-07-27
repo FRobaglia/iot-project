@@ -3,10 +3,12 @@ import CardHeader from './CardHeader';
 import CardChart from './CardChart';
 import CardInfos from './CardInfos';
 
-const CardDashboard = ({title, currentValue, dayMinValue, dayMaxValue, optimalMinValue, optimalMaxValue, sign, off, dropdown}) =>  {
+const CardDashboard = ({title, currentValue, dayMinValue, dayMaxValue, optimalMinValue, optimalMaxValue, sign, off, dropdown, alert}) =>  {
 
   const cardClass = off ? " card--off" : ""
+  const showAlert = currentValue < optimalMinValue || currentValue > optimalMaxValue
 
+  console.log(showAlert)
   return (
     <article className={"card" + cardClass}>
         <CardHeader title={title} currentValue={!off ? currentValue : "--"} sign={sign} dropdown={dropdown}></CardHeader>

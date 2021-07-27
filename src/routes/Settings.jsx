@@ -14,6 +14,7 @@ const Settings = () =>  {
 
   return (
     <main className="main main--settings">
+      <div className="flash"></div>
       <MainTitle pageId='settings' title='Système' />
       <Swiper 
       slidesPerView={ 1.2 }
@@ -29,7 +30,7 @@ const Settings = () =>  {
       { datas.map(( data ) => {       
         return (
           <SwiperSlide key={ data.id } >
-            <CardSettings title={ data.title } id={ data.id }/>
+            <CardSettings card={ data } id={ data.id }/>
           </SwiperSlide>
         ) 
       }) }

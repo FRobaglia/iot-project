@@ -7,4 +7,9 @@ $primaryFont: "Poppins";
 
 $bulletPaginationHeight: 48px; 
 
-$mainPaddingBottomMobile: calc(#{$navHeightMobile} + #{$bulletPaginationHeight} + 2rem)
+$mainPaddingBottomMobile: calc(#{$navHeightMobile} + #{$bulletPaginationHeight} + 2rem); 
+
+$cardWidth: 270px;
+$cardHeight: 342px; 
+
+$mainRadius: 8px; 

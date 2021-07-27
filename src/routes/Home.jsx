@@ -53,26 +53,13 @@ const Home = () =>  {
     <main className="main main--home">
       <MainTitle pageId='home' title='Tableau de bord' subtitle='<strong>Dernière actualisation :</strong> 19 Juillet 2021 - 14:45' />
       <Swiper
-      spaceBetween={20}
-      pagination={true}
+      slidesPerView={ 1.2 }
+      pagination={ true } 
       breakpoints= {
         {
-          400: {
-            slidesPerView: 1.2,
-          },
-          650: {
-            slidesPerView: 2,
-          },
-
-          750: {
-            slidesPerView: 2.2,
-          },
-
           900: {
-            direction: 'vertical',
             enabled: false
           }
-
         }
       }>
         {cardsData.map((card) => {

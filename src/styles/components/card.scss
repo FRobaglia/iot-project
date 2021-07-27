@@ -1,12 +1,11 @@
 .card {
-  width: 270px;
-  height: 342px;
-  padding: 15px 24px;
+  width: $cardWidth;
+  height: $cardHeight;
+  padding: 1.25rem 1.625rem;
   background: #F4F4F4;
-  box-shadow: -10px -10px 25px #FDFCFC, 10px 10px 50px #BBBBBB;
-  border-radius: 8px;
+  box-shadow: $cardShadow;
+  border-radius: $mainRadius;
   display: inline-block;
-  margin: 64px 0;
 }
 
 .card--off {
@@ -42,7 +41,7 @@
     font-family: $primaryFont; 
     font-weight: 600;
     font-size: 0.938rem;
-    border-radius: 8px;
+    border-radius: $mainRadius;
     padding: 0 4px;
 
     option {

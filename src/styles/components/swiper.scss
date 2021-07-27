@@ -21,8 +21,40 @@
   margin: 0 .5rem;
 }
 
-.swiper-slide {
+.swiper-wrapper {
+  padding: 4rem 0 4rem 1.625rem;
+
   @include desktop {
-    height: unset !important;
+    padding-left: 0;
+  }
+}
+
+
+.main--home, 
+.main--settings {
+
+  .swiper-wrapper {
+  
+    @include desktop {
+      width: calc(100% - 4rem);
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      column-gap: .6rem;
+      row-gap: 4rem;
+    }
+  }
+
+  .swiper-slide {
+    @include desktop {
+      width: $cardWidth !important;
+      height: $cardHeight !important; 
+    }
+  }
+}
+
+.main--help .swiper-slide {
+  @include desktop {
+    height: fit-content !important;
   }
 }

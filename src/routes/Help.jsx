@@ -15,7 +15,6 @@ const Help = () =>  {
   return (
     <main className="main main--help">
       <MainTitle pageId='help' title='Aide' />
-
       <Swiper 
       pagination={ true } 
       breakpoints= {
@@ -30,7 +29,7 @@ const Help = () =>  {
       { datas.map(( data ) => {       
         return (
           <SwiperSlide key={ data.article.title } >
-            <HelpSection key={ data.article.title } title={ data.article.title } content={ data.article.content }/>
+            <HelpSection title={ data.article.title } content={ data.article.content }/>
           </SwiperSlide>
         ) 
       }) }

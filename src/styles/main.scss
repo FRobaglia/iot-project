@@ -18,7 +18,7 @@ body {
 }
 
 .main__title {
-  padding: 1.625rem; 
+  padding: 1.625rem 1.625rem 0; 
 
   @include desktop {
     padding: 4.375rem 2rem 0;
@@ -45,4 +45,8 @@ body {
       font-weight: 600;
     }
   }
+}
+
+form, label, button {
+  font-family: $primaryFont;
 }

@@ -34,8 +34,8 @@ const cardsStaticData = [
   },
   {
     id: 2,
+    endpoint: 'humidity/air',
     title: "Humidité du sol",
-    endpoint: 'temperature',
     optimalMinValue: 20, 
     optimalMaxValue: 45, 
     dropdown: false,
@@ -54,8 +54,8 @@ const cardsStaticData = [
   },
   {
     id: 3,
+    endpoint: "luminosity",
     title: "Luminosité",
-    endpoint: 'temperature',
     optimalMinValue: 20, 
     optimalMaxValue: 45,
     sign: "lx",
@@ -75,8 +75,8 @@ const cardsStaticData = [
   },
   {
     id: 4,
+    endpoint: "humidity/air",
     title: "Humidité de l'air",
-    endpoint: "temperature",
     optimalMinValue: 20, 
     optimalMaxValue: 45,
     dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
@@ -84,7 +84,7 @@ const cardsStaticData = [
     article: {
       title: {
         firstContent: "Contrôle de", 
-        secondContent: "l’humidité de l’air "
+        secondContent: "l’humidité du sol"
       }, 
       content: [
         "Fermer totalement les tunnels pendant la nuit et assurer <strong>une bonne étanchéité</strong> des abris-serre.", 

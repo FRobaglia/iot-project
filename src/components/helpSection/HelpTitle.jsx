@@ -2,7 +2,7 @@ const HelpTitle = ({ title }) =>  {
   
   return (
     <h2 className="helpSection__title">
-      { title.firstContent } <span className="colored">{ title.secondContent }</span>
+      { title.firstContent }<br/><span className="colored">{ title.secondContent }</span>
     </h2>
   ); 
 }

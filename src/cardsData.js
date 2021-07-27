@@ -1,4 +1,4 @@
-export const apiURL = "http://ec2-3-133-134-22.us-east-2.compute.amazonaws.com:3000/"
+export const apiURL = "https://ec2-3-133-134-22.us-east-2.compute.amazonaws.com:3000/"
 
 export function getMinMaxValues(card) {
   const sorted = [...card].sort(function (a, b) {

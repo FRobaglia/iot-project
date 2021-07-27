@@ -1,7 +1,7 @@
 export function getStorage(key) {
   let value = JSON.parse(localStorage.getItem(key))
   if (value === null) {
-    value = { min: 10, max: 20, off: true}
+    value = { min: 10, max: 20, off: false}
     localStorage.setItem(key, JSON.stringify(value))
     return value
   }

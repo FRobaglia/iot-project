@@ -2,9 +2,9 @@ const HelpContent = ({ content }) =>  {
   
   return (
     <article className="helpSection__content">
-      { content.map(( p ) => {       
+      { content.map(( p ) => {   
         return(
-          <p dangerouslySetInnerHTML={{ __html: p }}></p> // In order to insert <strong> tags 
+          <p key={p} dangerouslySetInnerHTML={{ __html: p }}></p> // In order to insert <strong> tags 
         ); 
       }) }
     </article>

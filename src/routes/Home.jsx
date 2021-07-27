@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper/core';
 import { useState, useEffect } from 'react';
 
-import cardsStaticData, {apiURL, getMinMaxValues} from '../cardsData';
+import {getCardData} from '../fetch'
+import cardsStaticData from '../cardsData';
 
 // Import Swiper styles
 import 'swiper/swiper.scss';
@@ -12,42 +13,25 @@ import Card from '../components/cardDashboard/index';
 import MainTitle from '../components/MainTitle'; 
 
 SwiperCore.use([Pagination]);
-const cards = []
+
+let arr = []
 
 const Home = () =>  {
-  const [cardsData, setCardsData] = useState([])
-
   
-  async function getCardData(card) {
-    return await fetch(`${apiURL}${card.endpoint}`)
-    .then(response => response.json())
-    .then((cardData) => {
-      const data = cardData.data
-      const latestValue = data[data.length - 1].value
-      const minMaxValues = getMinMaxValues(data)
-      const fullCard = {
-        ...card,
-        currentValue: Math.round(latestValue),
-        dayMinValue: Math.round(minMaxValues.min),
-        dayMaxValue: Math.round(minMaxValues.max),
-        sign: cardData.unit
-      }
-      cards.push(fullCard)
-      return fullCard
-    });
-  }
-  
+  const [cards, setCards] = useState([])
 
   useEffect(() => {
 
+    arr = []
+
     cardsStaticData.forEach(card => {
       getCardData(card).then((res) => {
-        setCardsData([...cards])
+        arr = [...arr, res]
+        setCards(arr)
       })
     })
     
   }, []);
-
 
   return (
     <main className="main main--home">
@@ -62,8 +46,7 @@ const Home = () =>  {
           }
         }
       }>
-        {cardsData.map((card) => {
-          console.log(card)
+        {cards.map((card) => {
             return (
             <SwiperSlide key={card.id}>
 

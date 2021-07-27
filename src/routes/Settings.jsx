@@ -28,8 +28,8 @@ const Settings = () =>  {
       >
       { datas.map(( data ) => {       
         return (
-          <SwiperSlide key={ data.title } >
-            <CardSettings key={ data.title } title={ data.title } idName={ data.idName }/>
+          <SwiperSlide key={ data.id } >
+            <CardSettings title={ data.title } id={ data.id }/>
           </SwiperSlide>
         ) 
       }) }

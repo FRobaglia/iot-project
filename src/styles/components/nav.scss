@@ -24,7 +24,7 @@
     }
   }
 
-  .navLogo {
+  .logo {
     display: none;
   }
 
@@ -51,19 +51,24 @@
     background: $grey;
     box-shadow: $menuShadow;
   
-    .navLogo {
-      width: 100px;
-      height: 100px;
+    .logo {
+      display: block;
+      width: 39px;
+      height: 35px;
       fill: $primaryColor
     }
   
     .navList {
       width: fit-content;
-      height: 256px;
+      // height: 256px;
       margin-top: 4rem;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start; 
       align-items: flex-start;
+    }
+
+    .navItem:not(:last-child) {
+      margin-bottom: 3.125rem;
     }
   
     .navItem__link {
@@ -101,7 +106,7 @@
       text-underline-position: under;
     }
   
-    .navLogo, .navLogout {
+    .navLogout {
       display: none;
     }
   }

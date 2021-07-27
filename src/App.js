@@ -3,7 +3,7 @@ import { isBrowser } from 'react-device-detect';
 
 /***** COMPONENTS *****/
 import Home from './routes/Home';
-import Graphs from './routes/Graphs';
+// import Graphs from './routes/Graphs';
 import Settings from './routes/Settings';
 import Help from './routes/Help';
 import Login from './routes/Login';
@@ -25,7 +25,7 @@ function App() {
         <Nav></Nav>
         <Switch>
           <Route exact path="/" component={ Home }/>
-          <Route exact path="/statistiques" component={ Graphs }/>
+          {/* <Route exact path="/statistiques" component={ Graphs }/> */}
           <Route exact path="/systeme" component={ Settings }/>
           <Route exact path="/aide" component={ Help }/>
           <Route exact path="/login " component={ Login }/>

@@ -23,6 +23,15 @@ const Settings = () =>  {
         {
           900: {
             enabled: false
+          }, 
+          700: {
+            slidesPerView: 2.5
+          }, 
+          600: {
+            slidesPerView: 2
+          },
+          400: {
+            slidesPerView: 1.5
           }
         }
       }

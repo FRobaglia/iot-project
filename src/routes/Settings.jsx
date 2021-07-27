@@ -29,7 +29,7 @@ const Settings = () =>  {
       { datas.map(( data ) => {       
         return (
           <SwiperSlide key={ data.id } >
-            <CardSettings title={ data.title } id={ data.id }/>
+            <CardSettings title={ data.title } iconName={ data.iconName }/>
           </SwiperSlide>
         ) 
       }) }

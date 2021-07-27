@@ -5,7 +5,7 @@ import Icon from '../Icon';
 import ToggleState from './ToggleState';
 import FormValues from './FormValues';
 
-const CardSettings = ({ title, id }) =>  {
+const CardSettings = ({ title, iconName }) =>  {
 
   const [isActive, setActive] = useState("false");
 
@@ -22,7 +22,7 @@ const CardSettings = ({ title, id }) =>  {
             <Icon iconId='settingsCta' />
           </div>
           <div className="settingsCard__iconContainer">
-            <img src={ './svg/'  + id + '.svg' } alt={ id } className="settingsCard__icon" />
+            <img src={ './svg/'  + iconName + '.svg' } alt={ iconName } className="settingsCard__icon" />
           </div>
           <ToggleState />
         </section>

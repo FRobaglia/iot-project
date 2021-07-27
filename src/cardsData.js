@@ -14,6 +14,7 @@ export function getMinMaxValues(card) {
 const cardsStaticData = [
   {
     id: 'temperature',
+    iconName: 'temperature',
     title: "Température de l'air",
     optimalMinValue: 15, 
     optimalMaxValue: 27,
@@ -32,7 +33,8 @@ const cardsStaticData = [
     }
   },
   {
-    id: 'humidity/air',
+    id: 'humidity/menthe',
+    iconName: 'humidity-ground',
     title: "Humidité du sol",
     optimalMinValue: 20, 
     optimalMaxValue: 45, 
@@ -52,6 +54,7 @@ const cardsStaticData = [
   },
   {
     id: "luminosity",
+    iconName: "luminosity",
     title: "Luminosité",
     optimalMinValue: 20, 
     optimalMaxValue: 45,
@@ -71,7 +74,8 @@ const cardsStaticData = [
     }
   },
   {
-    id: "humidity/menthe",
+    id: "humidity/air",
+    iconName: "humidity-air",
     title: "Humidité de l'air",
     optimalMinValue: 20, 
     optimalMaxValue: 45,

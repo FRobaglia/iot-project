@@ -14,8 +14,8 @@ const CardHeader = ({title, currentValue, sign, card}) =>  {
   return (
     <div className="cardHeader">
       <h2 className="cardHeader__title">{title}</h2>
-      {card.dropdown && <CardDropdown change={handleChange} card={card} />}
-      {card.dropdown ? <h3 className="cardHeader__value">{selected}{sign}</h3> : <h3 className="cardHeader__value">{currentValue}{sign}</h3>}
+      {(card.dropdown && !card.off) && <CardDropdown change={handleChange} card={card} />}
+      {card.dropdown && !card.off ? <h3 className="cardHeader__value">{selected}{sign}</h3> : <h3 className="cardHeader__value">{currentValue}{sign}</h3>}
       
     </div>
   ); 

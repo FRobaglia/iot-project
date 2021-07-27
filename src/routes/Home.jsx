@@ -26,8 +26,21 @@ const Home = () =>  {
 
     cardsStaticData.forEach(card => {
       getCardData(card).then((res) => {
-        arr = [...arr, res]
-        setCards(arr)
+
+        if (!res.dropdown) {
+          arr = [...arr, res]
+          setCards(arr)
+        } else {
+            res.dropdown.forEach((dropdown, index) => {
+              getCardData({id: dropdown.endpoint}).then(c => {
+                res.dropdown[index].value = c.currentValue
+              })
+            })
+            arr = [...arr, res]
+            console.log(res)
+            setCards(arr)
+        }
+
       })
     })
     

@@ -7,7 +7,7 @@ export async function getCardData(card) {
     const data = cardData.data
     const latestValue = data[data.length - 1].value
     const minMaxValues = getMinMaxValues(data)
-    const fullCard = {
+    let fullCard = {
       ...card,
       currentValue: Math.round(latestValue),
       dayMinValue: Math.round(minMaxValues.min),

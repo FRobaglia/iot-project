@@ -12,7 +12,7 @@ const CardDashboard = ({card}) =>  {
   return (
     <article className={"card" + cardClass}>
         {showAlert ? <CardAlert card={card}/>: ""}
-        <CardHeader title={card.title} currentValue={!card.off ? card.currentValue : "--"} sign={card.sign} dropdown={card.dropdown}></CardHeader>
+        <CardHeader title={card.title} currentValue={!card.off ? card.currentValue : "--"} sign={card.sign} card={card}></CardHeader>
         <CardChart optimalMinValue={!card.off ? card.optimalMinValue : "--"} optimalMaxValue={!card.off ? card.optimalMaxValue : "--"} currentValue={!card.off ? card.currentValue : "--"}></CardChart>
         <CardInfos dayMinValue={!card.off ? card.dayMinValue : "--"} dayMaxValue={!card.off ? card.dayMaxValue : "--"} moy={!card.off ? (card.dayMinValue + card.dayMaxValue) / 2 : "--"} sign={card.sign}></CardInfos>
     </article>

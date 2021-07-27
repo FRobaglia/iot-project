@@ -41,7 +41,7 @@ const cardsStaticData = [
     title: "Humidité du sol",
     optimalMinValue: getStorage('humidity/air').min, 
     optimalMaxValue: getStorage('humidity/air').max,
-    dropdown: false,
+    dropdown: [{endpoint: 'humidity/menthe'}, {endpoint: 'humidity/tomate'}, {endpoint: 'humidity/basilic'}, {endpoint: 'humidity/poivron'}],
     off: getStorage('humidity/menthe').off,
     sign: "%",
     article: {
@@ -63,7 +63,7 @@ const cardsStaticData = [
     optimalMinValue: getStorage('luminosity').min, 
     optimalMaxValue: getStorage('luminosity').max,
     sign: "lux",
-    dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
+    dropdown: false,
     off: getStorage('luminosity').off, 
     article: {
       title: {
@@ -84,7 +84,7 @@ const cardsStaticData = [
     optimalMinValue: getStorage('humidity/menthe').min, 
     optimalMaxValue: getStorage('humidity/menthe').max,
     sign: "%",
-    dropdown: ["Capteur 1","Capteur 2","Capteur 3","Capteur 4","Capteur 5"],
+    dropdown: false,
     off: getStorage('humidity/air').off, 
     article: {
       title: {

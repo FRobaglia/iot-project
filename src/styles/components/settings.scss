@@ -1,6 +1,5 @@
 .f1_container {
   position: relative;
-  margin: 10px auto;
   width: $cardWidth;
   height: $cardHeight;
   z-index: 1;
@@ -52,6 +51,7 @@
 }
 
 .settingsCard__cta {
+  cursor: pointer;
   position: absolute;
   top: 1.25rem;
   right: 1.625rem;

@@ -21,7 +21,6 @@ const Settings = () =>  {
       breakpoints= {
         {
           900: {
-            direction: 'vertical',
             enabled: false
           }
         }

@@ -21,21 +21,9 @@ const Home = () =>  {
       pagination={ true } 
       breakpoints= {
         {
-          400: {
-            slidesPerView: 1.2,
-          },
-          650: {
-            slidesPerView: 2,
-          },
-
-          750: {
-            slidesPerView: 2.2,
-          },
-
-          950: {
-            slidesPerView: 3,
+          900: {
+            enabled: false
           }
-
         }
       }
       >

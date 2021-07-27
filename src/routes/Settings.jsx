@@ -1,4 +1,4 @@
-import datas from '../datas';
+import datas from '../cardsData';
 
 /***** COMPONENTS *****/
 import MainTitle from '../components/MainTitle';

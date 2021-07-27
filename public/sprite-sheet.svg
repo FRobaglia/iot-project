@@ -60,5 +60,15 @@
 			</filter>
 			</defs>
 		</symbol>
+
+		<symbol id="closePopup" title="closePopup" viewBox="0 0 36 36" fill="none">
+			<circle cx="18" cy="18" r="16.5" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M23.5 12.5L12.5 23.5" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M23.5 23.5L12.5 12.5" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</symbol>
+
+		<svg id="return" title="return" viewBox="0 0 14 21" fill="none">
+			<path d="M13.2088 1.73466C13.6358 2.13014 13.6361 2.80526 13.2096 3.2012L6.13636 9.7671C5.71014 10.1627 5.71014 10.8373 6.13636 11.2329L13.2096 17.7988C13.6361 18.1947 13.6358 18.8699 13.2088 19.2653L12.0156 20.3706C11.6321 20.7257 11.0399 20.7257 10.6565 20.3706L0.792057 11.2336C0.36477 10.8379 0.36477 10.1621 0.792056 9.76636L10.6565 0.62942C11.0399 0.274276 11.6321 0.274276 12.0156 0.62942L13.2088 1.73466Z" fill="#2B2B2B"/>
+		</svg>
   </defs>
 </svg>

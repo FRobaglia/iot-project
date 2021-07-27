@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper/core';
 import { useState, useEffect } from 'react';
 
+import { useHistory } from 'react-router';
+
 import {getCardData} from '../fetch'
 import cardsStaticData from '../cardsData';
 
@@ -11,14 +13,28 @@ import 'swiper/swiper.scss';
 /***** COMPONENTS *****/
 import Card from '../components/cardDashboard/index';
 import MainTitle from '../components/MainTitle'; 
+import HelpRollover from '../components/helpRollover'
 
 SwiperCore.use([Pagination]);
 
 let arr = []
 
 const Home = () =>  {
+
+  const history = useHistory()
   
   const [cards, setCards] = useState([])
+
+  const [showRollover, setShowRollover] = useState(false)
+
+  function handleChange() {
+    if (window.matchMedia("(min-width: 900px").matches) {
+      setShowRollover(!showRollover)
+    } else {
+      let path = `aide`; 
+      history.push(path);
+    }
+  }
 
   useEffect(() => {
 
@@ -47,6 +63,7 @@ const Home = () =>  {
   }, []);
 
   return (
+    <>
     <main className="main main--home">
       <MainTitle pageId='home' title='Tableau de bord' subtitle='<strong>Dernière actualisation :</strong> 19 Juillet 2021 - 14:45' />
       <Swiper
@@ -73,12 +90,15 @@ const Home = () =>  {
             return (
             <SwiperSlide key={card.id}>
 
-              <Card card={card} />
+              <Card onChange={handleChange} card={card} />
 
             </SwiperSlide>) 
         })}
       </Swiper>
+
     </main>
+    <HelpRollover onChange={handleChange} rolloverClass={showRollover ? "is-visible" : ""} />
+    </>
   ); 
 }
 

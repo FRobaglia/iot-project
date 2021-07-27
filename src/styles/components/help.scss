@@ -55,16 +55,23 @@
   z-index: 2;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -432px;
   width: 100%;
   height: calc(100vh - #{$navHeightMobile});
   background: $grey;
+  transition: .3s ease;
+  display: none;
   
   @include desktop {
+    display: block;
     width: 432px;
     height: 100vh;
     box-shadow: -2px 2px 6px rgba(150, 150, 150, 0.25);
     border-radius: $mainRadius;
+
+    &.is-visible {
+      right: 0;
+    }
   }
 
   .helpRollover__icon {
@@ -83,6 +90,7 @@
     }
     
     &.helpRollover__icon--closePopup {
+      cursor: pointer;
       display: none;
 
       @include desktop {

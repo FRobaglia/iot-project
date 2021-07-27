@@ -10,12 +10,16 @@ import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
 SwiperCore.use([Navigation, Pagination]);
 
-const HelpRollover = () =>  {
+const HelpRollover = ({rolloverClass, onChange}) =>  {
+
+  function handleChange() {
+    onChange()
+  }
 
   return (
-    <section className="helpRollover">
+    <section className={`helpRollover ${rolloverClass}`}>
       <Icon iconId="return" iconClass="helpRollover__icon"/>
-      <Icon iconId="closePopup" iconClass="helpRollover__icon"/>
+      <Icon onChange={() => { handleChange() }} iconId="closePopup" iconClass="helpRollover__icon"/>
       <Swiper 
       pagination={true}
       navigation={true}

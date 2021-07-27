@@ -17,7 +17,6 @@ import "swiper/components/navigation/navigation.scss"
 
 import './styles/styles.scss';
 
-import HelpRollover from './components/helpRollover/index';
 
 function App() {
 
@@ -33,7 +32,6 @@ function App() {
           <Route exact path="/aide" component={ Help }/>
           <Route exact path="/login " component={ Login }/>
         </Switch>
-        <HelpRollover />
       </Router>
     </div>
   );

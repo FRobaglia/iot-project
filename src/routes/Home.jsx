@@ -50,7 +50,7 @@ const Home = () =>  {
             return (
             <SwiperSlide key={card.id}>
 
-              <Card title={card.title} currentValue={card.currentValue} optimalMinValue={card.optimalMinValue} optimalMaxValue={card.optimalMaxValue} dayMinValue={card.dayMinValue} dayMaxValue={card.dayMaxValue} sign={card.sign} off={card.off} dropdown={card.dropdown} />
+              <Card card={card} />
 
             </SwiperSlide>) 
         })}

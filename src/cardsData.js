@@ -40,7 +40,7 @@ const cardsStaticData = [
     iconName: 'humidity-ground',
     title: "Humidité du sol",
     optimalMinValue: getStorage('humidity/air').min, 
-    optimalMaxValue: getStorage('humidity/air').max, 
+    optimalMaxValue: getStorage('humidity/air').max,
     dropdown: false,
     off: getStorage('humidity/menthe').off,
     sign: "%",

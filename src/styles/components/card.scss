@@ -6,6 +6,24 @@
   box-shadow: $cardShadow;
   border-radius: $mainRadius;
   display: inline-block;
+  position: relative;
+}
+
+.cardAlert {
+  z-index: 1;
+  position: absolute;
+  top: -20px; right: -5px;
+  width: 34px; height: 34px;
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:hover {
+    transform: scale(1.1)
+  }
+}
+
+.cardAlert__icon {
+  width: 54px; height: 54px;
 }
 
 .card--off {
